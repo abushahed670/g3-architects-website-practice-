@@ -12,9 +12,11 @@
 .display-flex {
     display: flex;
 }
-.text-primary{
+
+.text-primary {
     color: rgb(255, 144, 14);
 }
+
 /* dark02 */
 .text-gray {
     color: rgb(66, 66, 66);
@@ -45,9 +47,16 @@ main {
     max-width: 1450px;
     margin: 0 auto;
 }
-main > section{
+
+main>section {
     margin-top: 130px;
 }
+
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
 /* header styles  */
 
 .navbar {
@@ -101,24 +110,59 @@ main > section{
     align-items: center;
 
 }
-.team-img-container{
+
+.team-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
-.our-features{
+
+.our-features {
     margin-left: 130px;
     max-width: 530px;
 }
-.features-title{
-    font-size: 2.8rem;
-    font-weight: 700;
-}
-#quick-list{
+
+#quick-list {
     font-weight: 500;
 }
 
+/* some facts section styles  */
 
+.fact-description{
+    max-width: 540px;
+}
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.fact-card {
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    width: 241.83px;
+    height: 241.83px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.fact-number {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.fact-name {
+    color: rgb(114, 114, 114);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
 
 /* responsive  media query*/
 @media screen and (max-width: 576px) {
@@ -128,20 +172,23 @@ main > section{
     .teams {
         flex-direction: column;
     }
-    .team-img-container{
+
+    .team-img-container {
         grid-template-columns: repeat(1, 1fr);
     }
-    .our-features{
-        margin-left:20px;
+
+    .our-features {
+        margin-left: 20px;
     }
 }
 
 /* medium size devices  */
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    .teams{
+    .teams {
         flex-direction: column;
     }
-    .our-features{
+
+    .our-features {
         margin: 50px auto;
     }
 }
